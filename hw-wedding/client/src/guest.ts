@@ -79,9 +79,12 @@ export const newGuest = (desc: {name?: string, host?: string, family?: boolean, 
 }
 
 /**
- * 
- * @param desc 
- * @returns 
+ * Returns a new Guest with new params
+ * or guest's params by default
+ * @param guest guest to set params
+ * @param desc params to change to
+ * @returns a new Guest with given params
+ *          or guest's params by default
  */
 export const setGuest = (guest: Guest, desc: {name?: string, host?: string, family?: boolean, diet?: string,
     plus_one?: number, guestName?: string, guestDiet?: string}): Guest => {
